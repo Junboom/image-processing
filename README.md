@@ -32,4 +32,19 @@
 > ORIGIN -> GRAY -> MASK -> MASK_INV -> FG_IMG -> BG_IMG -> FG_BG_IMG -> ALL_IMG
 >> 그레이 스케일을 만들기 위해 threshold를 사용하고, and 또는 or, not 을 사용해서 broadcasting하면 이미지 위에 글자를 덮을 수 있음.
 
+> resize
+>> 사이즈 조정
+
+> interpolation
+>> area -> 100x100를 50x50으로 줄이려고 할 때 비율 상 가장 알맞는 값이 들어가게 된다. ex) 평균, 중앙값 등 연산된 것으로 들어감
+>> cubic -> 늘리려고 할 때 빈 공간을 어떻게 메꿀 것인지에 대한 연산된 것으로 들어감
+
+> RGB, YUV
+>> YUV는 동영상에서 처리할 때 좋음.
+>> RGB는 이미지에서 처리할 때 보편적.
+
+> classification
+>> 이미지를 보고 종류가 무엇인지 알 수 있다.
+>> ex) 스마트폰 보호 필름이지만 국수 카테고리에 들어있을 때 이미지를 보고 국수 카테고리에서 빼 내야 한다.
+
 
